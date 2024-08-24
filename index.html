@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Periódico Virtual</title>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333333;
+        }
+        header {
+            background-color: #002B5B;
+            color: #FFFFFF;
+            padding: 20px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        nav {
+            background-color: #FFCC00;
+            padding: 15px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #002B5B;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+        nav a:hover {
+            color: #FFFFFF;
+        }
+        .banner {
+            background-image: url('https://via.placeholder.com/1200x400');
+            background-size: cover;
+            background-position: center;
+            color: #FFFFFF;
+            padding: 100px 20px;
+            text-align: center;
+            position: relative;
+        }
+        .banner::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 43, 91, 0.7);
+            z-index: 0;
+        }
+        .banner h2 {
+            position: relative;
+            z-index: 1;
+            font-size: 3em;
+            margin: 0;
+            animation: fadeInDown 1s ease-out;
+        }
+        @keyframes fadeInDown {
+            0% {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 40px 20px;
+        }
+        .news-card {
+            background-color: #FFFFFF;
+            width: 30%;
+            margin: 15px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .news-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 0 20px rgba(0,0,0,0.3);
+        }
+        .news-card img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+        .news-card h3 {
+            color: #002B5B;
+            margin-top: 0;
+            font-size: 1.5em;
+        }
+        .news-card p {
+            color: #666666;
+        }
+        footer {
+            background-color: #002B5B;
+            color: #FFFFFF;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+            box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
+        }
+        footer a {
+            color: #FFCC00;
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Mi Periódico Virtual</h1>
+    </header>
+    
+    <nav>
+        <a href="#">Inicio</a>
+        <a href="#">Noticias</a>
+        <a href="#">Opinión</a>
+        <a href="#">Cultura</a>
+        <a href="#">Deportes</a>
+        <a href="#">Tecnología</a>
+        <a href="#">Contacto</a>
+    </nav>
+    
+    <div class="banner">
+        <h2>Noticias Destacadas del Día</h2>
+    </div>
+    
+    <div class="container">
+        <a href="https://exe.io/OPclG">
+            <div class="news-card">
+                <img src="https://www.diez.hn/binrepository/1024x680/0c0/0d0/none/3014757/ASHL/0_3830868_20230226120800.jpg" alt="Noticia 1">
+                <h3>chica de onlifans con cristiano ronaldo</h3>
+                <p>video de la chica reina de onlifans que asegura haber pasado una noche con cristiano ronaldo</p>
+            </div>
+        </a>
+        <a href="https://exe.io/OPclG">
+            <div class="news-card">
+                <img src="https://fapello.com/content/g/a/gabygardez/1000/gabygardez_0172.jpg" alt="Noticia 2">
+                <h3>video de la mujer mas hermosa de mexico</h3>
+                <p>la mas joven bella de mexico y su pagina provocadora</p>
+            </div>
+        </a>
+        <a href="https://exe.io/OPclG">
+            <div class="news-card">
+                <img src="https://video.erothots.co/s/https/s22.erome.com/652/6wuEdvua/07RAVrUU.jpeg?v=1715584312" alt="Noticia 3">
+                <h3>esta chica va a hacer un sorteo para acostarse con un fan</h3>
+                <p>de todos aquellos que han sido sus fans va a elegir a uno no importa el lugar ella ira y se grabaran follando.</p>
+            </div>
+        </a>
+    </div>
+    
+    <footer>
+        <p>&copy; 2024 Mi Periódico Virtual. Todos los derechos reservados. <a href="#">Política de Privacidad</a></p>
+    </footer>
+</body>
+</html>
